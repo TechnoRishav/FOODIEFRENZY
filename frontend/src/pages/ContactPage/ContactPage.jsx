@@ -1,6 +1,7 @@
 import Navbar from '../../components/Navbar/Navbar'
 import Footer from '../../components/Footer/Footer'
 import Contact from "../../components/Contact/Contact"
+import React, { useEffect } from 'react'
 const ContactPage = () => {
 
     useEffect(() => {
