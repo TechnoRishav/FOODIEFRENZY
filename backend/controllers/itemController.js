@@ -3,7 +3,9 @@ import Item from '../modals/item.js';
 export const createItem = async (req, res, next) => {
     try {
         const { name, description, category, price, rating, hearts } = req.body;
-        const imageUrl = req.file ? `/uploads/${req.file.filename}` : '';
+        const protocol = process.env.NODE_ENV === 'production' ? 'https' : req.protocol;
+        const host = `${protocol}://${req.get('host')}`;
+        const imageUrl = host + '/uploads/' + req.file.filename;
 
         // e.g. total might be price * hearts, or some other logic
         const total = Number(price) * 1; // replace with your own formula
