@@ -38,7 +38,7 @@ export const getItems = async (_req, res, next) => {
         const items = await Item.find().sort({ createdAt: -1 });
         const withFullUrl = items.map(i => ({
             ...i.toObject(),
-            imageUrl: i.imageUrl ? host + i.imageUrl : '',
+            imageUrl: i.imageUrl ? i.imageUrl : '',
         }));
         res.json(withFullUrl);
     } catch (err) {
