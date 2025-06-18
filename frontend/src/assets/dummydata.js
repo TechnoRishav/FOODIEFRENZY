@@ -114,7 +114,7 @@ export const teamMembers = [
         delay: 0.1,
         social: {
             twitter: "https://x.com/MR_ALEXWAR",
-            instagram: "https://www.instagram.com/sarna_2004?utm_source=qr&igsh=YW9ldTlrMmZtb3g4",
+            instagram: "https://www.instagram.com/swarna_2004?utm_source=qr&igsh=YW9ldTlrMmZtb3g4",
             facebook: "https://www.facebook.com/share/1AWrGBpL8p/",
             linkedin: "https://www.linkedin.com/in/sarnadip-chandra-a42a51275?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
         },
